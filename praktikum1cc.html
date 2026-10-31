@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Cloud Computing - Web Deployment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 1.5rem;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0f172a;
+            font-size: 1.6rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            color: #475569;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.35rem 0.85rem;
+            background: #dbeafe;
+            color: #1e40af;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .time-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 0.75rem;
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 1.5rem;
+        }
+
+        button {
+            background: #0284c7;
+            color: #ffffff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        button:hover {
+            background: #0369a1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <span class="badge">Live on Cloud</span>
+        <h1>Deploy Web Statis Sukses!</h1>
+        <p>Halaman ini merupakan hasil pengerjaan Tugas Modul 01 Praktikum Cloud Computing.</p>
+
+        <div class="time-box">
+            Waktu akses: <span id="current-time"></span>
+        </div>
+
+        <button onclick="alert('Deployment CI/CD berjalan normal!')">Cek Status</button>
+    </div>
+
+    <script>
+        document.getElementById('current-time').innerText = new Date().toLocaleString('id-ID');
+    </script>
+</body>
+
+</html>
